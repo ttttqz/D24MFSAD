@@ -6,7 +6,7 @@
 #JSUB -o output.%J
 #JSUB -n 16
 
-cd /home/22171214756/FSRD4AD/
-source /home/22171214756/anaconda3/etc/profile.d/conda.sh
+cd /home/FSRD4AD/
+source /home/anaconda3/etc/profile.d/conda.sh
 conda activate pytorch
 python main.py
