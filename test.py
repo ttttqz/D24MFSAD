@@ -151,7 +151,7 @@ def test(_class_, shot):
     image_size = 128  # 128
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    root_path = '/home/22171214756/medfsad/'
+    root_path = '/home/medfsad/'
 
     test_dataset = FSAD_Dataset_test(root_path, _class_, is_train=False, resize=image_size,
                                      shot=shot)
