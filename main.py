@@ -49,7 +49,7 @@ def train(_class_, shot):
     image_size = 128  # 128
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    root_path = '/home/22171214756/medfsad/'
+    root_path = '/home/medfsad/'
     train_dataset = FSAD_Dataset_train(root_path, _class_, is_train=True, resize=image_size,
                                        shot=shot, batch=1)
     print(len(train_dataset))
