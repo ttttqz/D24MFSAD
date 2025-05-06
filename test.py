@@ -78,7 +78,7 @@ def evaluation(encoder, decoder, dataloader, device, _class_, shot, batch, size,
     gt_list = []
 
     # loading support set
-    train_folder = f'/home/22171214756/medfsad/med-kshot/{_class_}/train/shot{shot}/good{shot}/' # 支撑集路径
+    train_folder = f'/home/medfsad/med-kshot/{_class_}/train/shot{shot}/good{shot}/' # 支撑集路径
     image_paths = [os.path.join(train_folder, f) for f in os.listdir(train_folder) if
                    f.endswith(('.png', '.jpg'))]
     images = [load_and_resize(img_path, size) for img_path in image_paths]
